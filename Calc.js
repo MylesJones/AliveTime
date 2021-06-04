@@ -3,11 +3,17 @@ function AliveTime() {
     birthDate = document.getElementById("birthdate").value;
 
     var dateArray = birthDate.split("-")
-    var years = dateArray[0]
-    var months = dateArray[1]
-    var days = dateArray[2]
+    var years = parseInt(dateArray[0])
+    var months = parseInt(dateArray[1]) -1 //zero indexed
+    var days = parseInt(dateArray[2])
+
+    birth = new Date(years, months, days)
+    var now = new Date();
+
+    
+
     
 
 
-    document.getElementById("results").innerHTML = "Your birthday is: " + days + "/" + months + "/" + years;
+    document.getElementById("results").innerHTML = "Your birthday is: " + birth + " and now is " + now;
 }
