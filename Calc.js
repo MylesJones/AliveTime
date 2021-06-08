@@ -25,9 +25,10 @@ function AliveTime() {
     //total Days
     tTD = tTH / 24;
 
-    //total amount of years between the two years, not specific to when in year.
-    totalYearsBetween = now.getFullYear() - birth.getFullYear();
-    tTY = yearsAlive(days, months, totalYearsBetween)
+    //total years alive, rounded down
+    tTY = now.getFullYear() - birth.getFullYear();
+
+    if (!birthdayYet(days, months)) { tTY -= 1};
 
 
     document.getElementById("results1").innerHTML = "Your birthday is {0}, and now is {1}, you have been alive for approximately {2} years".f(birth, now, tTY);
@@ -46,17 +47,15 @@ String.prototype.format = String.prototype.f = function () {
     return s;
 };
 
-function yearsAlive(birthDays, birthMonth, tYears) {
+function birthdayYet(birthDays, birthMonth) {
     currentDate = new Date();
 
-    if (birthMonth < currentDate.getMonth()) {
-        return tYears
-    }
-    else if (birthMonth == currentDate.getMonth()) {
-        if (birthDays <= currentDate.getDate()) {
-            return tYears
+    if (currentDate.getMonth() <= birthMonth) {
+        if ((currentDate.getMonth() == birthMonth) && (currentDate.getDate() >= birthDays)) {
+            return true;
         }
-    } else {
-        return tYears - 1
+        return false;
+    } else{
+        return true;
     }
 }
