@@ -1,5 +1,21 @@
+body {
+    background-color:rgb(39, 216, 240);
+}
+
 p {
     color: red;
     font-size: 20px;
     text-align: center;
+}
+
+h1 {
+    color: mediumblue;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+
+button:hover {
+    color: mediumblue;
 }
