@@ -10,12 +10,27 @@ p {
 
 h1 {
     color: mediumblue;
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
+    font-weight: bold;
     
 }
 
+label, input, button {
+    font-size: 18px;
+    
+}
+
+label {
+    color: white;
+}
 
 button:hover {
     color: mediumblue;
+}
+
+.image {
+    background-image: url("sand-timer.jpg");
+    background-size: cover;
+    background-position: center;
 }
