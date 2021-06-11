@@ -5,13 +5,13 @@ body {
 p {
     color: red;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
     color: mediumblue;
     font-size: 80px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     
 }
@@ -30,7 +30,8 @@ button:hover {
 }
 
 .image {
-    background-image: url("sand-timer.jpg");
+    background-image: url("stopwatch.jpg");
     background-size: cover;
     background-position: center;
+    height: 300px;
 }
