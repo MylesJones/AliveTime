@@ -4,7 +4,7 @@ body {
 
 p {
     color: red;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
 }
 
@@ -27,6 +27,15 @@ label {
 
 button:hover {
     color: mediumblue;
+}
+
+.container {
+    width: 400px;
+    margin: 30px 10px;
+}
+
+.results1 .results2 {
+    float:left;
 }
 
 .image {
