@@ -7,21 +7,24 @@
     
 
 
-    <body class = 'image'>
+    <body class = 'image'>  
         <h1 class = 'title'>
             Alive Time!
         </h1>
 
-        
-        <label>
-            Enter your date of birth:
-            <input type="date" id = "birthdate" value="1997-01-01">
+        <div class = 'input'>
+            <label>
+                Enter your date of birth:
+                <input type="date" id="birthdate" value="1997-01-01">
+            </label>
+            
+            <button type="button" onclick="AliveTime();">Calculate!</button>
 
-        </label>
-
-        <button type="button" onclick="AliveTime();">Calculate!</button>
+            <script src="Calc.js"></script>
+        </div>
         
-        <script src="Calc.js"></script>
+        
+        
 
         <div class='container'>
             <div class='results1'>

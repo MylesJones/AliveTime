@@ -13,28 +13,46 @@ p {
     font-family: 'Verdana', cursive;
     font-size: 80px;
     text-align: left;
-    font-weight: normal;
     text-transform: uppercase;
+    position: relative;
+    left: 160px;
 }
 
 
-label, input, button {
+
+.input {
     font-size: 18px;
-    
+    position: relative;
+    top: 100px;
 }
 
 label {
     color: white;
 }
 
+button {
+  transition-duration: 0.4s;
+  background-color: #153ceb; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 button:hover {
-    color: mediumblue;
+  background-color: #0bdbdb; /* Green */
+  color: white;
 }
 
 .container {
     width: 400px;
     margin: 30px 10px;
-    border: 2px solid    red;
+    border: 2px solid red;
+    position: relative;
+    top: 200px; 
 }
 
 .results1 .results2 {
