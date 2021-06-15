@@ -31,7 +31,7 @@ function AliveTime() {
     if (!birthdayYet(days, months)) { tTY -= 1};
 
 
-    document.getElementById("results1").innerHTML = "Your birthday is <b>{0}</b>, and now is <b>{1}</b>. ".f(birth, now);
+    // document.getElementById("results1").innerHTML = "Your birthday is <b>{0}</b>, and now is <b>{1}</b>. ".f(birth, now);
 
     document.getElementById("results2").innerHTML = (
         "You have been alive for approximately <b>{4} years!</b> That is:\
