@@ -2,32 +2,42 @@
     <head>
         <title>Alive Time</title>
 
-        <style>
-            p {
-                color: red;
-                font-size: 20px;
-                text-align: center;
-            }
-        </style>
+        <link href = 'style.css' rel = 'stylesheet'>
     </head>
     
-    <h1 style="font-size: large; color: mediumblue;">
-        Welcome to Alive Time!
-    </h1>
-    <body style="background-color:rgb(39, 216, 240);">
-        <label>
-            Enter your date of birth:
-            <input type="date" id = "birthdate" value="1997-01-01">
 
-        </label>
 
-        <button type="button" onclick="AliveTime();">Calculate!</button>
+    <body class = 'image'>  
+        <h1 class = 'title'>
+            Alive Time!
+        </h1>
+
+        <div class = 'input'>
+            <label>
+                Enter your date of birth:
+                <input type="date" id="birthdate" value="1997-01-01">
+            </label>
+            
+            <button type="button" onclick="AliveTime();">Calculate!</button>
+
+            <script src="Calc.js"></script>
+        </div>
         
-        <script src="Calc.js"></script>
+        
+        
 
-        <p id = "results1"></p>
+        <div class='container'>
+            <div class='results1'>
+                <p id="results1"></p>
+            </div>
 
-        <p id = "results2"></p>
+            
+
+            <div class='results2'>
+                <p id="results2"></p>
+            </div>
+        </div>
+        
         
     </body>
 </html>

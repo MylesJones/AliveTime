@@ -1,0 +1,74 @@
+body {
+    background-color:rgb(0, 0, 0);
+}
+
+p {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, cursive;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Verdana', cursive;
+    font-size: 150px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+
+
+.input {
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+
+label {
+    color: white;
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: #153ceb; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0bdbdb; /* Green */
+  color: white;
+}
+
+.container {
+    width: 1020px;
+    margin: 30px 10px;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 70px;
+    left: 30px; 
+    text-align: center;
+}
+
+ul li {
+    margin: 0 300px;
+    color: white;
+    text-align: left;
+}
+
+.image {
+    background-image: url("stopwatch.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
