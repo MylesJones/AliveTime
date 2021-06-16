@@ -34,9 +34,13 @@ function AliveTime() {
     // document.getElementById("results1").innerHTML = "Your birthday is <b>{0}</b>, and now is <b>{1}</b>. ".f(birth, now);
 
     document.getElementById("results2").innerHTML = (
-        "You have been alive for approximately <b>{4} years!</b> That is:\
-        <b>{0} seconds</b>, <b>{1} minutes</b>, <b>{2} hours</b>, and <b>{3}\
-         days!</b>".f(Math.round(tTS), Math.round(tTM), Math.round(tTH), Math.round(tTD), tTY)
+        "<h1>You have been alive for <b>{4} years!</b> That is:</h1>\
+        <ul>\
+            <li><b>{0}</b> Seconds!</li>\
+            <li><b>{1}</b> Minutes!</li>\
+            <li><b>{2}</b> Hours!</li>\
+            <li><b>{3}</b> Days!</li>\
+        </ul>".f(Math.round(tTS), Math.round(tTM), Math.round(tTH), Math.round(tTD), tTY)
      );
 }
 
