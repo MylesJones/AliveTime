@@ -51,9 +51,9 @@ button:hover {
 }
 
 .container {
-    width: 1020px;
+    width: 1000px;
     margin: 30px 10px;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     position: relative;
     top: 70px;
     left: 30px; 
@@ -71,4 +71,5 @@ ul li {
     background-size: cover;
     background-position: center;
     height: 300px;
+    width: 1500px;
 }
