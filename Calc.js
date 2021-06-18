@@ -56,6 +56,7 @@ String.prototype.format = String.prototype.f = function () {
     return s;
 };
 
+//checks if had birthday yet this year.
 function birthdayYet(birthDays, birthMonth) {
     currentDate = new Date();
 
